@@ -1,0 +1,31 @@
+[project]
+name = "fine-tuning-studio"
+version = "0.1.0"
+description = "Fine Tuning Studio on Apple Silicon"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate",
+    "bitsandbytes",
+    "black",
+    "ipykernel",
+    "peft",
+    "plotly",
+    "pylint",
+    "python-dotenv",
+    "torch",
+    "torchaudio",
+    "torchvision",
+    "transformers",
+    "trl",
+    "unsloth",
+    "xformers",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+# Fix for xformers build dependency
+extra-build-dependencies = { xformers = ["torch"] }
