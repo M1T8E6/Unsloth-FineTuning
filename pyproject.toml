@@ -1,7 +1,7 @@
 [project]
-name = "fine-tuning-studio"
+name = "unsloth-finetuning"
 version = "0.1.0"
-description = "Fine Tuning Studio on Apple Silicon"
+description = "Fine-tuning Llama 3.2 models using Unsloth"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
